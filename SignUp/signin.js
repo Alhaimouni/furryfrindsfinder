@@ -25,7 +25,7 @@ form.addEventListener("submit", (e) => {
   const xhr = new XMLHttpRequest();
   xhr.open(
     "POST",
-    "http://localhost:8080/furryfinderfriends/api/v1/auth/signup",
+    "http://furryfriendfinder.us-east-1.elasticbeanstalk.com/furryfinderfriends/api/v1/auth/signup",
     true
   );
   xhr.setRequestHeader("Content-Type", "application/json");

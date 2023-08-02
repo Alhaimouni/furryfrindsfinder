@@ -20,7 +20,7 @@ let body = document.querySelector("#cards");
 
 document.addEventListener("DOMContentLoaded", function () {
   let xhr = new XMLHttpRequest();
-  let url = "http://localhost:8080/furryfinderfriends/api/v1/user/animal";
+  let url = "http://furryfriendfinder.us-east-1.elasticbeanstalk.com/furryfinderfriends/api/v1/user/animal";
   xhr.open("GET", url, true);
   xhr.setRequestHeader("Content-Type", "application/xml");
   xhr.setRequestHeader("Authorization", userD.token);
@@ -107,7 +107,7 @@ function submit(id) {
   submitButton.textContent = "Submit";
   submitButton.addEventListener("click", (e) => {
     let xhr = new XMLHttpRequest();
-    let url = `http://localhost:8080/furryfinderfriends/api/v1/user/adopt/submit?animalId=${id}`;
+    let url = `http://furryfriendfinder.us-east-1.elasticbeanstalk.com/furryfinderfriends/api/v1/user/adopt/submit?animalId=${id}`;
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/xml");
     xhr.setRequestHeader("Authorization", userD.token);
